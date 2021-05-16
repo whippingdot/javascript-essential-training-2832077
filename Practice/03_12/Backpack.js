@@ -5,7 +5,7 @@
  * Class expression:  const Name = class {}
  */
 
-class Backpack {
+const Backpack = class {
   constructor(
     // Defines parameters:
     name,
@@ -35,6 +35,6 @@ class Backpack {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   }
-}
+};
 
 export default Backpack;
