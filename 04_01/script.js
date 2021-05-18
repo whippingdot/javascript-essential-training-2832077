@@ -6,7 +6,7 @@
 import Backpack from "./Backpack.js";
 
 const everydayPack = new Backpack(
-  "Everyday Pack",
+  "Everyday Backpack",
   30,
   "grey",
   15,

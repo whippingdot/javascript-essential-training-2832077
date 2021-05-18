@@ -5,7 +5,7 @@ const Book = class {
     genre,
     numberOfPages,
     hasPictures,
-    // In object bookInfo
+   // In object bookInfo
     numberOfMainCharacters,
     blurb,
     sequelsOrPrequels
