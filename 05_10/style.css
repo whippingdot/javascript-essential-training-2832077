@@ -1,0 +1,23 @@
+.sitenavbar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 100px;
+  justify-content: center;
+  padding-bottom: 75px;
+  margin: 0;
+}
+
+.sitenavbar a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.sitenavbar a:hover {
+  text-decoration: underline;
+}
+
+.siteheader {
+  padding: 0;
+}
