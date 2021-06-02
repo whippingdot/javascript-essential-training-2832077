@@ -36,9 +36,9 @@ console.log("Original array:", deskItems);
 // });
 // console.log("Found item:", calculator);
 
-deskItems.find(function (item, index, array) {
-  if (item == "calculator") {
-    array.splice(index, 1);
-  }
-});
-console.log("Deleting the calculator from the array:", deskItems);
+// deskItems.find(function (item, index, array) {
+//   if (item == "calculator") {
+//     array.splice(index, 1);
+//   }
+// });
+// console.log("Deleting the calculator from the array:", deskItems);
