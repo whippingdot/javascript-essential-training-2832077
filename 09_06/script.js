@@ -9,31 +9,32 @@ import backpackObjectArray from "./components/data.js";
  * Add event listener to the lid-toggle button.
  */
 const lidToggle = function (event, button, newArg) {
-  console.log(event)
-  console.log(newArg)
-   
+  console.log(event);
+  console.log(newArg);
+
   // Find the current backpack object in backpackObjectArray
-  let backpackObject = backpackObjectArray.find( ({ id }) => id === button.parentElement.id );
-  
+  let backpackObject = backpackObjectArray.find(
+    ({ id }) => id === button.parentElement.id
+  );
+
   // Toggle lidOpen status
-  backpackObject.lidOpen == true 
-    ? backpackObject.lidOpen = false 
-    : backpackObject.lidOpen = true;
+  backpackObject.lidOpen == true
+    ? (backpackObject.lidOpen = false)
+    : (backpackObject.lidOpen = true);
 
   // Toggle button text
-  button.innerText == "Open lid" 
-    ? button.innerText = "Close lid" 
-    : button.innerText = "Open lid";
+  button.innerText == "Open lid"
+    ? (button.innerText = "Close lid")
+    : (button.innerText = "Open lid");
 
   // Set visible property status text
   let status = button.parentElement.querySelector(".backpack__lid span");
   status.innerText == "closed"
     ? (status.innerText = "open")
     : (status.innerText = "closed");
-}
+};
 
 const backpackList = backpackObjectArray.map((backpack) => {
-
   let backpackArticle = document.createElement("article");
   backpackArticle.classList.add("backpack");
   backpackArticle.setAttribute("id", backpack.id);
@@ -66,14 +67,14 @@ const backpackList = backpackObjectArray.map((backpack) => {
     </ul>
     <button class="lid-toggle">Open lid</button>
   `;
-  
+
   let button = backpackArticle.querySelector(".lid-toggle");
-  let newArg = "The argument I want to pass to the callback function!"
+  let newArg = "The argument I want to pass to the callback function!";
 
   // Add event listener
-  button.addEventListener("click", (event) => {
-    lidToggle(event, button, newArg)
-  })
+  button.addEventListener("click", () => {
+    lidToggle(event, button, newArg);
+  });
 
   return backpackArticle;
 });
@@ -84,5 +85,3 @@ const main = document.querySelector(".maincontent");
 backpackList.forEach((backpack) => {
   main.append(backpack);
 });
-
-

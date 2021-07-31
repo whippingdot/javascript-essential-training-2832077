@@ -22,3 +22,23 @@ body {
   height: 6rem;
   background-color: hsl(0, 0%, 90%);
 }
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: hsl(0, 0%, 99%);
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.aqua {
+  background-color: aqua;
+}
